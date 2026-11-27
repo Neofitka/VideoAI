@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Отчёт о создании рекламной промо-визитки Restoration Workshop.">
+  <title>Restoration Workshop — отчёт о проекте</title>
+  <style>
+    :root {
+      --ink: #263029;
+      --muted: #687269;
+      --sage: #78866f;
+      --paper: #fffefa;
+      --canvas: #f0eee7;
+      --line: #e2dfd5;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font: 16px/1.7 Arial, Helvetica, sans-serif;
+    }
+    .hero {
+      padding: 76px 24px 68px;
+      color: #fff;
+      background:
+        linear-gradient(110deg, rgba(28,39,32,.96), rgba(92,109,88,.88)),
+        #344238;
+    }
+    .hero-inner, main, footer { width: min(980px, calc(100% - 40px)); margin: auto; }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-size: 12px;
+      color: #d7dfd1;
+    }
+    h1 {
+      margin: 18px 0 14px;
+      font: 500 clamp(42px, 8vw, 76px)/1.02 Georgia, serif;
+      letter-spacing: -.035em;
+    }
+    .hero p { max-width: 700px; margin: 0; color: #e8ece4; font-size: 18px; }
+    main { padding: 34px 0 70px; }
+    section {
+      margin: 22px 0;
+      padding: clamp(22px, 4vw, 36px);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 8px 26px rgba(37,44,37,.035);
+    }
+    h2 { margin: 0 0 18px; font: 500 30px/1.2 Georgia, serif; }
+    h3 { margin: 24px 0 9px; font-size: 17px; }
+    p, li { color: #424a42; }
+    .lead { font-size: 18px; }
+    .tag {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 5px 11px;
+      border-radius: 30px;
+      background: #edf0e9;
+      color: #52634d;
+      font-size: 13px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+    figure { margin: 0; }
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #eeece4;
+    }
+    figcaption { padding: 8px 2px 0; color: var(--muted); font-size: 13px; }
+    .video-wrap {
+      overflow: hidden;
+      border-radius: 12px;
+      background: #171b18;
+    }
+    video { display: block; width: 100%; max-height: 620px; }
+    .note { color: var(--muted); font-size: 13px; }
+    .prompt {
+      padding: 18px;
+      overflow-wrap: anywhere;
+      white-space: pre-wrap;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #f3f2ec;
+      color: #303830;
+      font: 13px/1.65 ui-monospace, SFMono-Regular, Consolas, monospace;
+    }
+    ol { padding-left: 22px; }
+    li { padding-left: 5px; margin: 8px 0; }
+    footer { padding: 0 0 34px; color: var(--muted); text-align: center; font-size: 13px; }
+    @media (max-width: 640px) {
+      .hero { padding: 55px 0; }
+      .gallery { grid-template-columns: 1fr; }
+      h2 { font-size: 26px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Учебный проект · генеративный дизайн и видео</div>
+      <h1>Restoration<br>Workshop</h1>
+      <p>Рекламная промо-визитка мастерской по реставрации деревянной мебели — история о том, как бережная работа возвращает предметам красоту и жизнь.</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Идея и цель проекта</h2>
+      <p class="lead">Цель проекта — создать короткий рекламный видеоролик, представляющий условную мастерскую Restoration Workshop и её услугу по восстановлению антикварной мебели.</p>
+      <p>Основной образ ролика — старинный деревянный стул, поверхность которого постепенно преображается: потёртое дерево становится гладким, ухоженным и покрытым свежим лаком. Визуальный стиль строится на сочетании тёплого дерева, приглушённых природных оттенков и полупрозрачного матового стекла.</p>
+      <span class="tag">Выбранная тема: рекламное промо-визитка компании</span>
+    </section>
+
+    <section>
+      <h2>2. Использованные материалы</h2>
+      <p>Для подготовки проекта были созданы два варианта фирменного логотипа, концептуальное изображение рекламной сцены и итоговый видеоролик.</p>
+      <div class="gallery">
+        <figure>
+          <img src="1.jpg" alt="Первый вариант логотипа Restoration Workshop">
+          <figcaption><strong>1.jpg</strong> — первый вариант логотипа с эффектом матового стекла.</figcaption>
+        </figure>
+        <figure>
+          <img src="2.jpg" alt="Второй вариант логотипа Restoration Workshop">
+          <figcaption><strong>2.jpg</strong> — второй вариант логотипа, выполненный в виде стеклянной круглой пластины.</figcaption>
+        </figure>
+        <figure>
+          <img src="3.png" alt="Концептуальная рекламная сцена с реставрируемым стулом">
+          <figcaption><strong>3.png</strong> — концептуальный кадр рекламного ролика.</figcaption>
+        </figure>
+      </div>
+      <p class="note">Изображения загружаются из корневой папки сайта. Файлы 1.jpg, 2.jpg, 3.png и этот HTML-документ должны находиться в одной папке.</p>
+    </section>
+
+    <section>
+      <h2>3. Порядок выполнения работы</h2>
+      <ol>
+        <li><strong>Выбор темы.</strong> Для проекта выбрана рекламная промо-визитка компании, оказывающей услуги по реставрации деревянной мебели.</li>
+        <li><strong>Разработка визуального стиля.</strong> Определены цветовая палитра и художественное направление: натуральные оттенки дерева и камня, шалфейно-зелёные акценты, прозрачное и матовое стекло.</li>
+        <li><strong>Генерация логотипа.</strong> С помощью первого текстового запроса созданы два варианта логотипа Restoration Workshop. Результаты сохранены в файлах 1.jpg и 2.jpg.</li>
+        <li><strong>Создание ключевого рекламного образа.</strong> Подготовлена сцена с антикварным стулом и стеклянной надписью мастерской. Результат сохранён в файле 3.png.</li>
+        <li><strong>Генерация видео.</strong> С помощью второго промпта создан кинематографичный ролик: камера плавно приближается к стулу, а поверхность предмета визуально переходит из состаренной в восстановленную.</li>
+        <li><strong>Сборка отчёта.</strong> Изображения, видеоролик, описание этапов и использованные запросы объединены в HTML-документ.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>4. Использованные промпты</h2>
+      <h3>Промпт № 1 — создание логотипа</h3>
+      <div class="prompt">Minimalist logo design for a restoration workshop, elegant semi-transparent frosted glass typography, clean and uncluttered composition. Cinematic studio lighting, volumetric spotlighting diffusing through the glass, realistic light refraction, subtle caustics, and soft rim lighting. Photorealistic, 3D glassmorphism, highly detailed. Natural color palette: muted earth tones, soft warm wood, stone hues, and sage green harmonizing with crystal clear glass. Professional studio photography, 8k resolution, sharp focus, ray tracing, masterpiece, octane render.</div>
+
+      <h3>Промпт № 2 — создание видеоролика</h3>
+      <div class="prompt">A cinematic 10-second continuous shot. FOREGROUND: An antique wooden chair undergoing real-time visible restoration. A smooth wave of transformation sweeps across the chair, turning worn, scratched, aged wood into polished, freshly lacquered pristine wood. Realistic swirling clouds of fine sawdust and atomized lacquer spray surround the active restoration zone, catching the light. BACKGROUND: The text "restoration workshop" crafted from semi-transparent frosted glass, slowly rotating on its vertical axis, gently floating and subtly bending or warping in 3D space. The glass text catches and refracts bright cinematic studio spotlights, creating volumetric light rays, soft lens flares, and realistic caustics. CAMERA: Smoothly dollies in (pushes forward) towards the chair, with a shallow depth of field that keeps the foreground sharp and the background text softly blurred but clearly legible. STYLE & COLORS: Natural color palette featuring warm oak, soft sage green, and earthy tones. Photorealistic, 8k resolution, seamless blend of real studio cinematography and high-end CGI VFX, masterpiece, highly detailed textures.</div>
+    </section>
+
+    <section>
+      <h2>5. Итоговый видеоролик</h2>
+      <div class="video-wrap">
+        <video controls playsinline preload="metadata" poster="3.png">
+          <source src="4.mp4" type="video/mp4">
+          Ваш браузер не поддерживает воспроизведение видео. Откройте файл 4.mp4 отдельно.
+        </video>
+      </div>
+      <p class="note">Итоговый видеоролик: <strong>4.mp4</strong>. Для корректного воспроизведения поместите видео в ту же корневую папку, что и HTML-документ и изображения.</p>
+    </section>
+
+    <section>
+      <h2>6. Результат и вывод</h2>
+      <p>В результате работы подготовлена визуальная концепция рекламной промо-визитки Restoration Workshop: разработаны варианты логотипа, создан рекламный образ мастерской и сгенерирован видеоролик, демонстрирующий процесс преображения старинной мебели.</p>
+      <p>Единая стилистика — натуральные материалы, мягкое кинематографичное освещение и стеклянная типографика — помогает передать атмосферу аккуратной, качественной и эстетичной реставрации.</p>
+    </section>
+  </main>
+
+  <footer>Restoration Workshop · Учебный проект</footer>
+</body>
+</html>
